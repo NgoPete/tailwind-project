@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
+.top-menu-expanded {
+  @apply absolute top-10 z-50 w-full bg-white text-center animate-slideDown;
+}
+
+.top-menu-items {
+  @apply cursor-pointer font-medium text-lg mx-4 py-1 hover:text-green-900 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-orange-500 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.ct-icon {
+  @apply lg:w-8 lg:h-8 sm:w-8 sm:h-8 w-6 h-6 inline-block;
+}
+.ct-badge-circle {
+  @apply text-center rounded-full px-1.5;
+}
+.ct-subheadline {
+  @apply flex justify-center items-center mb-10 mt-40;
+}
+.ct-subhedline-deco1 {
+  @apply w-8 h-px bg-emerald-200;
+}
+.ct-subheadline-text {
+  @apply uppercase mx-4 tracking-widest font-semibold text-lg text-center;
+}
+.ct-subhedline-deco2 {
+  @apply w-8 h-px bg-red-200;
+}
+.ct-cart-btn {
+  @apply absolute text-xl text-center bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block text-white opacity-90 bg-cyan-600 w-max tracking-wider py-2 px-6 font-medium cursor-pointer rounded-md;
+}
+.ct-cart-sale-btn {
+  @apply absolute w-[100px] group-hover:hidden rounded bg-white py-2 px-4 top-3 right-3 text-center text-emerald-500 font-semibold;
+}

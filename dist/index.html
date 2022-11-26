@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon/favicon.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="output.css" />
+    <script src="./index.js" type="text/javascript" async></script>
+    <title>Konoha shop</title>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        class="content-wrapper font-Kalar max-w-screen-xl text-base mx-auto px-8"
+      >
+        <header class="p-4 mx-auto">
+          <nav class="flex flex-row justify-between items-center relative">
+            <img
+              class="text-yellow-400 basis-1/6 w-0"
+              src="images/favicon/favicon.png"
+              alt="logo"
+            />
+            <div
+              class="shadow shadow-slate mr-12 flex text-center logo basis-1/6 text-xl font-extrabold cursor-pointer"
+            >
+              Konoha shop
+            </div>
+            <!-- //  dưới lg thì các items sẽ ẩn đi, còn từ lg trở lên sẽ display flex  -->
+            <ul
+              id="top-menu"
+              class="basis-3/6 lg:basis-2/6 hidden lg:flex lg:items-center lg:justify-end lg:gap-8 items-center gap-8 uppercase text-sm text-green-500 font-medium"
+            >
+              <li class="top-menu-items">
+                <a class="" href="#">Home</a>
+              </li>
+              <li class="top-menu-items">
+                <a class="" href="#">Products</a>
+              </li>
+              <li class="top-menu-items">
+                <a class="" href="#">Blog</a>
+              </li>
+              <li class="top-menu-items">
+                <a class="" href="#">About</a>
+              </li>
+              <li class="top-menu-items">
+                <a class="" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul
+              class="basis-2/6 flex justify-items-end lg:justify-center items-center uppercase text-gray-500 font-medium"
+            >
+              <li class="top-menu-items flex justify-items-end">
+                <svg
+                  class="ct-icon items-baseline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="#00ff40"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path
+                    d="M62.5,144H188.1a15.9,15.9,0,0,0,15.7-13.1L216,64H48Z"
+                    opacity="0.2"
+                  ></path>
+                  <path
+                    d="M184,184H69.8L41.9,30.6A8,8,0,0,0,34.1,24H16"
+                    fill="none"
+                    stroke="#00ff40"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <circle
+                    cx="80"
+                    cy="204"
+                    r="20"
+                    fill="none"
+                    stroke="#00ff40"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></circle>
+                  <circle
+                    cx="184"
+                    cy="204"
+                    r="20"
+                    fill="none"
+                    stroke="#00ff40"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></circle>
+                  <path
+                    d="M62.5,144H188.1a15.9,15.9,0,0,0,15.7-13.1L216,64H48"
+                    fill="none"
+                    stroke="#00ff40"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                </svg>
+
+                <span class="mx-2 text-cyan-700">Cart</span>
+                <span class="ct-badge-circle bg-green-300 text-yellow-400"
+                  >99+</span
+                >
+              </li>
+            </ul>
+            <div
+              class="basis-1/6 lg:hidden flex items-center cursor-pointer sm:px-4"
+            >
+              <svg
+                id="toggle-menu"
+                class="ct-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="#00ff40"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="40"
+                  y1="128"
+                  x2="216"
+                  y2="128"
+                  stroke="#00ff40"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="40"
+                  y1="64"
+                  x2="216"
+                  y2="64"
+                  stroke="#00ff40"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="40"
+                  y1="192"
+                  x2="216"
+                  y2="192"
+                  stroke="#00ff40"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
+            </div>
+          </nav>
+        </header>
+        <main>
+          <div
+            class="slider h-[530px] bg-[url('./images/slider.jpg')] bg-cover bg-center bg-no-repeat"
+          >
+            <div
+              class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40"
+            >
+              <div class="mx-16 text-white text-center">
+                <div
+                  class="text-5xl text-yellow-500 bbackdrop-brightness-50 backdrop-opacity-10 font-bold mb-10 shadow-lg shadow-teal-500"
+                >
+                  BEST PLACE TO BUY NICE GAMES
+                </div>
+                <div class="flex justify-center">
+                  <div
+                    class="text-xl bg-cyan-600 w-max tracking-wider py-4 px-6 font-medium cursor-pointer rounded-md"
+                  >
+                    EXPLORE OUR PRODUCTS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End slider -->
+          <div class="stoty">
+            <div class="w-full h-full flex justify-center items-center">
+              <div
+                class="px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 pt-32 text-center"
+              >
+                <div class="text-3xl mb-6 font-medium">Information</div>
+                <div class="text-green-800 mb-6 text-justify">
+                  Steam is a video game digital distribution service and
+                  storefront by Valve. It was launched as a software client in
+                  September 2003 as a way for Valve to provide automatic updates
+                  for their games, and expanded to distributing and offering
+                  third-party game publishers' titles in late 2005...
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="hover:text-teal-600 relative after:absolute after:-bottom-2 text-lg after:left-0 after:bg-orange-500 hover:after:bg-blue-500 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-300;"
+                    >Read more about us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End story -->
+
+          <div class="ct-subheadline">
+            <div class="ct-subhedline-deco1"></div>
+            <div class="ct-subheadline-text">action</div>
+            <div class="ct-subhedline-deco2"></div>
+          </div>
+
+          <div class="games-action w-[95%] lg:w-[65%] mx-auto mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
+              <div
+                class="ct-card lg:border-2 lg:border-emerald-500 lg:h-[540px]"
+              >
+                <div
+                  class="h-[400px] sm:h-[540px] bg-[url('./images/action1.jpg')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div class="w-full h-full relative group">
+                    <div class="ct-cart-btn">ADD TO CART</div>
+                  </div>
+                </div>
+                <div class="text-center mt-4">
+                  <div>Naruto: Ultimate Ninja Storm 4</div>
+                  <div>
+                    <span class="text-green-500 text-lg">32$</span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ct-card lg:border-2 lg:border-emerald-500 lg:h-[540px]"
+              >
+                <div
+                  class="h-[400px] sm:h-[540px] bg-[url('./images/action2.jpg')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div class="w-full h-full relative group">
+                    <div class="ct-cart-sale-btn">On sale</div>
+                    <div class="ct-cart-btn">ADD TO CART</div>
+                  </div>
+                </div>
+                <div class="text-center mt-4">
+                  <div>King of War</div>
+                  <div>
+                    <span class="text-green-500 text-lg">49$</span
+                    ><span class="ml-2 text-red-500 line-through">100$</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End featured-mugs -->
+          <div class="ct-subheadline">
+            <div class="ct-subhedline-deco1"></div>
+            <div class="ct-subheadline-text">sport</div>
+            <div class="ct-subhedline-deco2"></div>
+          </div>
+          <div class="more-products">more-products</div>
+          <!--End more-products -->
+          <div class="ct-subheadline">
+            <div class="ct-subhedline-deco1"></div>
+            <div class="ct-subheadline-text">horror</div>
+            <div class="ct-subhedline-deco2"></div>
+          </div>
+          <div class="coffe-magazine">coffe-magazine</div>
+          <!--End coffe-magazine -->
+          <div class="lifestyle-story">lifestyle-story</div>
+          <!--End lifestyle-story -->
+          <div class="subcribe-us">subcribe-us</div>
+          <!--End subcribe-us -->
+        </main>
+        <footer>Footer</footer>
+      </div>
+      <!--End wrapper -->
+    </div>
+    <!--End root -->
+  </body>
+</html>
