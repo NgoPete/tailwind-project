@@ -1,15 +1,19 @@
 {
+  "homepage": "http://NgoPete.github.io/tailwind-project",
   "name": "tailwin-starter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "tailwindcss": "^3.2.4"
   }
 }
